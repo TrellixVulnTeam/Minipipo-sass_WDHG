@@ -18,6 +18,9 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- MI CSS -->
     <link rel="stylesheet" href="css/css-bootstrap.css">
 
@@ -93,7 +96,7 @@
         <div class="row">
             <div class="col-lg-12 col-12">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
+                    <div class="carousel-inner d-none d-sm-block">
                       <div class="carousel-item active">
                         <img src="Assets/imagenes/carrusel2.jpg" class="d-block w-100" alt="...">
                       </div>
@@ -119,29 +122,38 @@
     <!-- INICIO MAIN PRODUCTOS -->
         <div class="row d-flex justify-content-center align-content-center">
             <div class="col-lg-4 col-12 text-center">
-                <a href="Views/productos_beba.html"><img class="imgIzq" src="Assets/imagenes/bebemodelo.jpg" alt="imagen_beba" width="300px" height="500px"/></a>
+                <a href="Views/productos_beba.html"><img class="imgIzq" src="Assets/imagenes/bebemodelo.jpg" alt="imagen_beba" width="300px"/></a>
             </div>
             <div class="col-lg-4 col-12 text-center">
-                <a href="Views/productos_bebe.html"><img class="imgCenter" src="Assets/imagenes/niña__modelo.jpg" alt="imagen_bebe"  width="300px" height="500px"/></a>
+                <a href="Views/productos_bebe.html"><img class="imgCenter" src="Assets/imagenes/niña__modelo.jpg" alt="imagen_bebe"  width="300px"/></a>
             </div>
             <div class="col-lg-4 col-12 text-center">
-                <a href="#"><img class="imgDer" src="Assets/imagenes/niño__modelo.jpg" alt="imagen_bebe" width="300px" height="500px"/></a>
+                <a href="#"><img class="imgDer" src="Assets/imagenes/niño__modelo.jpg" alt="imagen_bebe" width="300px"/></a>
             </div>
         </div>
     <!-- FINALIZA MAIN PRODUCTOS -->
-
+    <div data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
+</div>
             <div class="row d-flex justify-content-center align-content-center">
-                <div class="col-lg-4 col-12 text-center">
+                <div class="col-lg-4 col-12 text-center" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <img src="Assets/imagenes/tarjeta__icon.png" alt="pago_tarjeta" class="circular img-fluid">
                     <h4>3 y 6 cuotas sin interés</h4>
                     <p>con tarjetas Mastercard, Visa y American Express</p>
                 </div>
-                <div class="col-lg-4 col-12 text-center">
+                <div class="col-lg-4 col-12 text-center" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <img src="Assets/imagenes/store__icon.png" alt="comprar_en_tienda" class="circular img-fluid">
                     <h4>Podés acercarte a nuestra tienda</h4>
                     <p>de lunes a sabados de 10hs a 19hs</p>
                 </div>
-                <div class="col-lg-4 col-12 text-center">
+                <div class="col-lg-4 col-12 text-center" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <img src="Assets/imagenes/delibery__icon.png" alt="delibery" class="circular img-fluid">
                     <h4>Envíos sin cargo</h4>
                     <p>con compras superiores a $8000.</p>
@@ -187,5 +199,9 @@
 <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
