@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../Assets/imagenes/minipipo_logo.jpeg">
-    <meta name="Keywords" content="ropa, bebe, beba, ropita">
+    <meta name="Keywords" content="ropa de bebe, ropa de beba, indumentaria de niños, indumentaria de bebe de un año, ropa para chicos, ropa para niñas, tienda de ropa campana, tienda de ropa de niños, compra de ropa bebes, comprar ropa niños, comprar ropa niñas, ">
     <meta name="author" content="Marcos Escobar">
-    <meta name="description" content="Página de venta de ropa para niños en la ciudad de Campana">
+    <meta name="description" content="Al completar el formulario nos pondremos en contacto lo mas rápido posible.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 
     <!-- MI CSS -->
     <link rel="stylesheet" href="../css/css-bootstrap.css">
-    <title>Mini Pipo</title>
+    <title>Nuestro contacto | Mini Pipo</title>
 </head>
 <body>
 <!-- comienza el menú -->
@@ -91,31 +91,32 @@
         <form>
             <div class="form-group">
                 <label for="formGroupExampleInput">Nombre del contacto *</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Colocar nombre y apellido">
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Colocar nombre y apellido" required>
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Correo electrónico *</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nombre@ejemplo.com">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nombre@ejemplo.com" required>
                 <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu email.</small>
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Confirmar correo electrónico *</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nombre@ejemplo.com">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nombre@ejemplo.com" required>
                 <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu email.</small>
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput2">Teléfono/Celular *</label>
-                <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Sin 0 ni 15">
+                <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Sin 0 ni 15" required>
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput2">Número de pedido *</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="En caso de no poseer colocar 0">
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="En caso de no poseer colocar 0" required>
             </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">COMENTARIOS</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button type="submit">Enviar</button>
+            </div> 
         </form>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">COMENTARIOS</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div> 
     </main>
 <!-- fin de formulario -->
 <!-- comienza el footer -->
@@ -125,10 +126,10 @@
                 <p class="footer--newsletter">SI TE REGISTRAS A NUESTRO NEWSLATTER PODES ACCEDER A UN 10% DE DESCUENTO EN TU PRIMERA COMPRA!!</p>
             </div>
             <div class="col-lg-12 text-center">
-                <form>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nombre@ejemplo.com">
-                    </div>
+                <form action="">
+                    <label for="newslatter">
+                        <input type="text" name="correo" placeholder="Ingresá tu mail"> 
+                        <button type="submit">Enviar</button>
                     </label>
                 </form>
             </div>
